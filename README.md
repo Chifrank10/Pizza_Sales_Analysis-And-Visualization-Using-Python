@@ -1,77 +1,187 @@
-# Pizza Sales Data Analysis Project(USING PYTHON) 🍕
-This project analyzes transactional pizza sales data to uncover business insights that support decision-making in sales, operations, and inventory management. The analysis simulates a real-world business intelligence engagement using a structured Business Requirements Document (BRD) and an end-to-end analytics workflow.
-## Project Objective
-The objective of this project is to transform raw pizza sales data into actionable insights that help management:
-- Understand revenue and demand trends
-- Identify top-performing and underperforming products
-- Optimize staffing, inventory, and promotional strategies
-- Monitor key performance indicators through visual dashboards
-## Business Questions Answered
-- What is the total revenue, total orders, and total pizzas sold?
-- Which pizza categories, sizes, and individual products generate the most revenue?
-- Which pizzas are the best-selling and least-selling by quantity and revenue?
-- What are the daily, hourly, and monthly sales trends?
-- When do peak demand periods occur?
-- How does Average Order Value (AOV) vary by day and time?
-- Which products should be promoted, optimized, or reconsidered?
-- How can staffing and inventory planning be aligned with demand patterns?
-## Dataset Description
-The Data Set was downloaded from Kaggle .
-This project was developed using a formal Business Requirements Document (BRD) to simulate a real-world analytics engagement.”
+# Pizza Sales Data Analysis Project 🍕
 
-## Key Fields:
-- order_id: Unique identifier for each order
-- pizza_name: Name of pizza sold
-- pizza_category: Category classification (Classic, Veggie, Chicken, Supreme)
-- pizza_size: Size of pizza (S, M, L, XL)
-- quantity: Number of pizzas sold
-- total_price: Revenue per transaction
-- order_date & order_time: Timestamp fields for time-based analysis
-## Tools & Technologies
-- Python (Pandas, NumPy) for data cleaning and transformation
-- Matplotlib & Seaborn for data visualization
-- Google Colab for cloud-based analysis
-- Microsoft Excel (dashboard alignment)
-- GitHub for version control and portfolio hosting
-## Key KPIs
-- Total Revenue
-- Total Orders
-- Total Pizzas Sold
-- Average Order Value (AOV)
-- Average Pizzas per Order
-- Revenue by Category and Size
-- Top 5 & Bottom 5 Products
-## Dashboard Visualizations
-- KPI cards for revenue, orders, AOV, and pizzas sold
-- Daily sales trend by day of week
-- Hourly sales trend and demand heatmap
-- Monthly revenue trend analysis
-- Revenue and quantity by pizza category
-- Revenue and quantity by pizza size
-- Top 5 and Bottom 5 pizzas by performance
-- Average Order Value by day of week
+## Project Overview
+This project analyzes transactional pizza sales data to uncover customer purchasing behavior, sales performance trends, operational demand patterns, and revenue-driving products. The analysis focuses on optimizing staffing schedules, improving inventory planning, and developing data-driven promotional strategies to enhance operational efficiency and business revenue.
+
+The project combines business intelligence, exploratory data analysis, and operational insights using Python, SQL, Excel, and Power BI to support data-driven decision-making for a restaurant business.
+
+---
+
+## Business Problem
+Restaurant businesses generate large volumes of sales data daily, but without proper analysis, valuable operational and revenue insights remain hidden.
+
+The business faced challenges in:
+- Identifying high-performing and low-performing pizza products
+- Understanding customer purchasing behavior
+- Detecting peak operational hours and demand periods
+- Optimizing staffing allocation during busy periods
+- Managing inventory efficiently
+- Developing effective promotional strategies to improve revenue
+
+This project addresses these challenges through comprehensive sales and operational analysis.
+
+---
+
+## Project Objective
+The objective of this project is to perform a comprehensive analysis of pizza sales transactions to uncover customer purchasing behavior, evaluate sales and revenue performance, identify peak demand periods, optimize staffing schedules and inventory management, and develop data-driven promotional strategies that improve operational efficiency, product performance, and overall business revenue.
+
+---
+
+## Dataset Information
+The dataset contains transactional pizza sales records, including:
+- Order details
+- Pizza categories and sizes
+- Product pricing
+- Quantity sold
+- Date and time of orders
+- Revenue generated per transaction
+
+### Key Columns
+- `order_id`
+- `order_date`
+- `order_time`
+- `pizza_name`
+- `pizza_category`
+- `pizza_size`
+- `quantity`
+- `unit_price`
+- `total_price`
+- `pizza_ingredients`
+
+---
+
+## Tools & Technologies Used
+
+- Python – Core programming language for data analysis and automation
+- Pandas & NumPy – Data cleaning, transformation, and numerical analysis
+- Matplotlib & Seaborn – Data visualization and exploratory analysis
+- Jupyter Notebook (VS Code) – Interactive analysis and experimentation
+- Visual Studio Code – Primary development environment
+- Streamlit – Interactive web dashboard for KPI and visualization reporting
+- Git & GitHub – Version control and project documentation
+- CSV – Structured dataset format used for analysis
+
+## Full BI Pipeline for Project
+CSV → Python (analysis) → Streamlit (dashboard) → GitHub (portfolio
+
+## Executive Summary
+This project analyzes transactional pizza sales data to uncover customer purchasing behavior, sales performance trends, operational demand patterns, and revenue-driving products. The analysis focuses on optimizing staffing schedules, improving inventory planning, and developing data-driven promotional strategies to enhance operational efficiency and business revenue.
+
+### Overall Business Findings
+- The business generated strong revenue from a small group of high-performing pizza products.
+- Large-sized pizzas contributed the highest share of revenue.
+- Sales demand varied significantly across hours, weekdays, and months.
+- Peak operational periods occurred during lunch and evening hours.
+- Certain pizza categories consistently outperformed others in both sales quantity and revenue generation.
+- Some low-performing products contributed minimal revenue despite occupying inventory resources.
+
+### Key Insights
+- A few top-selling pizzas accounted for a significant percentage of total sales revenue.
+- Weekend sales volumes were higher than weekday sales.
+- Peak demand periods indicated the need for optimized staffing allocation during high-traffic hours.
+- Customer purchasing patterns showed stronger preference for specific pizza categories and sizes.
+- Inventory demand was concentrated around frequently ordered ingredients and products.
+- Underperforming pizzas presented opportunities for targeted promotions and menu optimization.
+
+### Recommendations
+- Increase staffing levels during peak lunch and evening periods to improve service efficiency.
+- Prioritize inventory allocation for high-demand pizza ingredients and sizes.
+- Implement promotional campaigns for low-performing products during off-peak periods.
+- Focus marketing efforts on best-selling pizza categories to maximize revenue growth.
+- Introduce bundle offers and upselling strategies to increase average order value.
+- Continuously monitor sales trends to support data-driven operational decisions.
+
+---
+
+## Business Questions
+
+### Sales & Revenue Analysis
+1. What is the total revenue generated?
+2. What is the total number of orders placed?
+3. What is the total quantity of pizzas sold?
+4. Which pizza categories generate the most revenue?
+5. Which pizza sizes generate the most revenue?
+6. Which individual pizzas generate the highest revenue?
+
+### Product Performance Analysis
+7. Which pizzas are the best-selling by quantity?
+8. Which pizzas are the least-selling by quantity?
+9. Which products contribute the least revenue?
+10. Which pizza categories are most preferred by customers?
+
+### Time-Based Analysis
+11. When do peak demand periods occur?
+12. Which hours record the highest order volume?
+13. Which days generate the highest sales?
+14. Are weekends busier than weekdays?
+
+### Operational Analysis
+15. Which periods require additional staffing?
+16. Which products require higher inventory allocation?
+17. Which low-performing products need promotional support?
+
+---
+
+## Data Cleaning & Preparation
+The following data cleaning and preprocessing steps were performed:
+- Checked for missing values
+- Removed duplicate records
+- Converted date and time columns to proper formats
+- Created additional calculated columns for analysis
+- Standardized categorical variables
+- Validated revenue and quantity calculations
+
+---
+
+## Exploratory Data Analysis
+The exploratory data analysis focused on:
+- Revenue trends over time
+- Sales distribution by pizza category and size
+- Peak sales hours and weekdays
+- Best-selling and least-selling pizzas
+- Customer ordering behavior
+- Product demand patterns
+- Revenue contribution analysis
+
+---
+
 ## Key Insights
-Large-sized pizzas contribute the highest share of total revenue. Sales peak during specific hours and weekends, indicating clear demand cycles. A small number of pizza products drive a large portion of total revenue. Certain low-performing pizzas consistently underperform and may require redesign or removal.
-## Business Recommendations
-- Focus marketing campaigns on high-performing pizza categories and sizes.
-- Optimize staffing levels during identified peak sales hours.
-- Adjust inventory planning based on category and size demand patterns.
-- Bundle or promote slow-moving pizzas with top sellers.
-- Continuously monitor KPIs using dashboards for proactive decision-making.
-## Project Deliverables
-- Google Colab Notebook (.ipynb) with full analysis
-- Enhanced Business Requirements Document (BRD)
-- Visual dashboards and charts
-- Cleaned and structured dataset
-- GitHub repository documentation (this README)
-## How to Run the Project
-1. Upload the pizzavv.csv file into Google Colab.
-2. Open the Pizza Sales Analysis notebook.
-3. Run all cells to reproduce the analysis and visualizations.
-4. Review insights and dashboard outputs.
-Hashtags (for LinkedIn & Portfolio Sharing)
-#DataAnalytics #DataAnalyst #Python #Pandas #EDA #BusinessIntelligence #AnalyticsPortfolio #GitHubPortfolio #GoogleColab #DataVisualization
-Author
-Developed by: Chisom Ogbulie
-Role: Data Analyst / MIS
-This project is part of a growing analytics portfolio demonstrating business-focused data storytelling.
+- Large pizzas generated the highest revenue contribution.
+- A small number of products accounted for a significant share of sales.
+- Peak ordering periods occurred during lunch and evening hours.
+- Weekend transactions exceeded weekday order volumes.
+- Certain pizza categories consistently outperformed others.
+- Some products showed low sales performance despite occupying inventory resources.
+
+---
+
+## Dashboard / Visualizations
+The project includes interactive dashboards and visualizations such as:
+- Total Revenue KPI
+- Total Orders KPI
+- Total Pizzas Sold KPI
+- Revenue by Pizza Category
+- Revenue by Pizza Size
+- Top 10 Best-Selling Pizzas
+- Least-Selling Pizzas
+- Hourly Sales Trend
+- Daily Sales Trend
+- Peak Demand Heatmaps
+- Product Performance Charts
+
+---
+
+## Recommendations
+- Increase staffing levels during peak operational hours.
+- Improve inventory planning for high-demand ingredients and products.
+- Introduce promotions for underperforming pizzas.
+- Focus marketing campaigns on top-performing pizza categories.
+- Implement upselling and bundle strategies to increase average order value.
+- Continuously monitor operational and sales trends for better decision-making.
+
+---
+
+## Conclusion
+This project demonstrates how transactional sales data can be transformed into actionable business insights that support operational efficiency, inventory optimization, staffing management, and revenue growth.
+
+By leveraging data analytics and visualization techniques, the analysis provides practical recommendations that can help restaurant businesses improve performance and make data-driven strategic decisions.
