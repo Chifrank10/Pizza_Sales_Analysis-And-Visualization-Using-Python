@@ -100,8 +100,7 @@ def daily_revenue(pizza_df):
     return pizza_df.groupby("order_date")["total_price"].sum()
 ```
 ## Dashboard Preview
-
-!(assets/dash1.png)
+![Dashboard Screenshot](assets/dash1.PNG)
 
 ## Executive Summary
 This project analyzes transactional pizza sales data to uncover customer purchasing behavior, sales performance trends, operational demand patterns, and revenue-driving products. The analysis focuses on optimizing staffing schedules, improving inventory planning, and developing data-driven promotional strategies to enhance operational efficiency and business revenue.The dashboard was designed in such a way that it was an analytic engine which would take future csv files of similar formart and give usefule output for management view and decision making
