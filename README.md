@@ -65,7 +65,7 @@ The dataset contains transactional pizza sales records, including:
 CSV → Python (analysis) → Streamlit (dashboard) → GitHub (portfolio
 
 ## Executive Summary
-This project analyzes transactional pizza sales data to uncover customer purchasing behavior, sales performance trends, operational demand patterns, and revenue-driving products. The analysis focuses on optimizing staffing schedules, improving inventory planning, and developing data-driven promotional strategies to enhance operational efficiency and business revenue.
+This project analyzes transactional pizza sales data to uncover customer purchasing behavior, sales performance trends, operational demand patterns, and revenue-driving products. The analysis focuses on optimizing staffing schedules, improving inventory planning, and developing data-driven promotional strategies to enhance operational efficiency and business revenue.The dashboard was designed in such a way that it was an analytic engine which would take future csv files of similar formart and give usefule output for management view and decision making
 
 ### Overall Business Findings
 - The business generated strong revenue from a small group of high-performing pizza products.
