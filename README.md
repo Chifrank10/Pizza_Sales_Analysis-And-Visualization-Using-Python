@@ -98,6 +98,7 @@ Example:
 ```python
 def daily_revenue(pizza_df):
     return pizza_df.groupby("order_date")["total_price"].sum()
+```
 
 
 ## Executive Summary
