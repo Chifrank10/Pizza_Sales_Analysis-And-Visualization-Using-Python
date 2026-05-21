@@ -230,3 +230,5 @@ The project includes interactive dashboards and visualizations such as:
 This project demonstrates how transactional sales data can be transformed into actionable business insights that support operational efficiency, inventory optimization, staffing management, and revenue growth.
 
 By leveraging data analytics and visualization techniques, the analysis provides practical recommendations that can help restaurant businesses improve performance and make data-driven strategic decisions.
+## Project Status
+✔ Completed (Archived for portfolio reference)
