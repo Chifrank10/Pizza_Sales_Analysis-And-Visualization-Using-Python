@@ -63,6 +63,42 @@ The dataset contains transactional pizza sales records, including:
 
 ## Full BI Pipeline for Project
 CSV → Python (analysis) → Streamlit (dashboard) → GitHub (portfolio
+##  Project Architecture
+
+Pizza Sales Analytics Project is structured into modular components:
+
+Pizza_Data_analysis/
+│
+├── app/
+│   └── dashboard.py        
+│
+├── src/
+│   ├── analysis.py        
+│   ├── cleaning.py
+|   ├──visualization.py   
+│
+├── data/
+│   └── Pizzavv.csv        
+│
+├── requirements.txt   
+└── README.md              
+## Analytical Engine
+
+The analytical engine is built in `analysis.py`, which handles all business logic calculations.
+
+It includes:
+
+- Revenue calculations (daily, monthly, category-wise)
+- Sales aggregation (hourly, weekday trends)
+- Product performance ranking
+- KPI computations
+
+Example:
+
+```python
+def daily_revenue(pizza_df):
+    return pizza_df.groupby("order_date")["total_price"].sum()
+
 
 ## Executive Summary
 This project analyzes transactional pizza sales data to uncover customer purchasing behavior, sales performance trends, operational demand patterns, and revenue-driving products. The analysis focuses on optimizing staffing schedules, improving inventory planning, and developing data-driven promotional strategies to enhance operational efficiency and business revenue.The dashboard was designed in such a way that it was an analytic engine which would take future csv files of similar formart and give usefule output for management view and decision making
